@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="home.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="Logo.png" alt="Logo" />
+      </div>
+      <div class="nav-items">
+        <a href="./home.html">Home</a> <a href="./projects.html">Projects</a> <a href="./skill.html">Skill</a> <a href="../index.php">Contact</a>
+      </div>
+    </nav>
+    <section class="bg">
+      <div class="bg-container">
+        <div class="column-left">
+          <h1>Welcome</h1>
+          <p>
+            I'm Archie Verania, a passionate and dedicated Bachelor of Science in Information Technology (BSIT) student.
+          </p>
+          <div class="button-container">
+            <button onclick="location.href='./projects.html'">Projects</button>
+            <button onclick="location.href='./skill.html'">Skills</button>
+            <button onclick="location.href='../index.php'">Contact</button>
+          </div>
+        </div>
+        <div class="column-right">
+          <img src="face.jpg" alt="Your Picture" class="profile-picture" onload="this.classList.add('loaded')" />
+        </div>
+      </div>
+    </section>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        var profilePicture = document.querySelector(".profile-picture");
+        profilePicture.onload = function() {
+          profilePicture.classList.add("loaded");
+        };
+      });
+    </script>
+  </body>
+</html>
